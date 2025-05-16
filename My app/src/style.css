@@ -1,0 +1,101 @@
+body{
+  font-family: Red Hat Text, sans-serif;
+  font-size: 16px;
+  display: flex;
+  gap: 40px;
+  
+}
+.container{
+  padding-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "card1 card2  card3 "
+    "card4 card5  card6"
+    "card7 card8  card9"
+    ;
+  gap: 15px;
+}
+.card{
+  border-radius: 10px;
+  padding: 0px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width:300px
+  
+}
+.cardcart{
+  border-radius: 10px;
+  max-height: 600px;
+  max-width: 400px;
+  padding: 0px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+img{
+width: 300px;
+}
+h2{
+  font-size: 16px;
+  font-weight: 600;
+}
+p{
+  font-size: 16px;
+}
+.card1 .card4 .card9{
+  border-radius: solid 2px  hsl(14, 86%, 42%);
+}
+button{
+  border-radius: 20px;
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
