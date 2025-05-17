@@ -1,4 +1,4 @@
-import {product} from './product.interface';
+import type { product } from './product.interface';
 import data from './data.json';
 
 export const products: product[] =data.map((item: any) => {
