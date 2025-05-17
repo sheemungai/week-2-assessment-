@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/src/style.css" />
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Red+Hat+Text?query=Red+Hat+Text" />
     <title>Vite + TS</title>
   </head>
@@ -18,7 +18,7 @@
    <p>Waffle</p>
  <h2>Waffle with Berries</h2> 
  <h3>$6.50</h3> 
-  <button class="btn"> Add to Cart</button>
+  <button class="btn"><img src="src/icon-add-to-cart.svg" alt="cart" class="cart"> Add to Cart</button>
 </div>
 
 <div class="card">
@@ -26,7 +26,12 @@
   <p>Crème Brûlée</p> 
  <h2>Vanilla Bean Crème Brûlée</h2> 
  <h3> $7.00</h3>
- <button class="button">Add to Cart</button> 
+ <div class="quantity-selector">
+  <button class="sign"><img src="src/images/icon-decrement-quantity.svg" alt="decrement" ></button>
+  <span class="quantity">4</span>
+ <button class="sign"><img src="src/images/icon-increment-quantity.svg" alt="increment" ></button>
+ 
+</div>
 </div>
 
 <div class="card">
@@ -34,15 +39,20 @@
   <p>Macaron</p>
   <h2>Macaron Mix of Five</h2>
  <h3>$8.00</h3> 
- <button class="btn">Add to Cart</button> 
+<button class="btn"> <img src="src/icon-add-to-cart.svg" alt="cart" class="cart">Add to Cart</button> 
 </div>
 
 <div class="card">
-  <img src="src/images/image-tiramisu-tablet.jpg" alt="Tiramisu">
+  <img src="./src/images/image-tiramisu-tablet.jpg" alt="Tiramisu">
    <p>Tiramisu</p>
 <h2>Classic Tiramisu</h2>
  <h3>$5.50</h3> 
- <button class="button">Add to Cart</button> 
+ <div class="quantity-selector">
+  <button class="sign"><img src="src/images/icon-decrement-quantity.svg" alt="decrement" ></button>
+  <span class="quantity">1</span>
+ <button class="sign"><img src="src/images/icon-increment-quantity.svg" alt="increment" ></button>
+ 
+</div>
 </div>
 
 <div class="card">
@@ -50,7 +60,7 @@
   <p>Baklava</p>
   <h2>Pistachio Baklava</h2>
   <h3>$4.00</h3>
- <button class="btn">Add to Cart</button> 
+ <button class="btn"> <img src="src/icon-add-to-cart.svg" alt="cart" class="cart">Add to Cart</button> 
 </div>
 
 <div class="card">
@@ -58,7 +68,7 @@
   <p>Pie</p>
   <h2>Lemon Meringue Pie</h2>
   <h3>$5.00</h3>
-  <button class="btn">Add to Cart</button>
+  <button class="btn"> <img src="src/icon-add-to-cart.svg" alt="cart" class="cart">Add to Cart</button>
 </div>
 
 <div class="card">
@@ -66,7 +76,7 @@
   <p>Cake</p>
   <h2>Red Velvet Cake</h2>
   <h3>$4.50</h3>
-  <button class="btn">Add to Cart</button> 
+  <button class="btn"> <img src="src/icon-add-to-cart.svg" alt="cart" class="cart">Add to Cart</button> 
  
 </div>
 <div class="card">
@@ -74,7 +84,7 @@
    <p>Brownie</p>
   <h2>Salted Caramel Brownie</h2>
   <h3>$4.50</h3>
- <button class="btn">Add to Cart</button> 
+ <button class="btn"><img src="src/icon-add-to-cart.svg" alt="cart" class="cart">Add to Cart</button> 
 </div>
 
 <div class="card">
@@ -82,15 +92,20 @@
    <p>Panna Cotta</p>
   <h2>Vanilla Panna Cotta</h2>
   <h3>$6.50</h3>
- <button class="button">Add to Cart</button> 
+ <div class="quantity-selector">
+  <button class="sign"><img src="src/images/icon-decrement-quantity.svg" alt="decrement" ></button>
+  <span class="quantity">2</span>
+ <button class="sign"><img src="src/images/icon-increment-quantity.svg" alt="increment" ></button>
+ 
+</div>
   
 </div>
 </div>
-<div class="cardcart">
-  Your Cart (<!-- Quantity -->)
-  Your added items will appear here
-</div>
 
+<div class="cardcart">
+ <h1 >Your Cart (<!-- Quantity -->)</h1>  
+ <p> Your added items will appear here</p>
+</div>
 
 
     <script type="module" src="/src/main.ts"></script>
